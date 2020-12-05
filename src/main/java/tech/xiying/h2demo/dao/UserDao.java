@@ -1,10 +1,12 @@
 package tech.xiying.h2demo.dao;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import tech.xiying.h2demo.entity.User;
 
-public interface UserDao extends JpaRepository<User,Long> {
-
+/**
+ * @author shanghao5
+ */
+public interface UserDao extends PagingAndSortingRepository<User,Long> {
 
 
 }
